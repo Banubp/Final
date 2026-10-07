@@ -1,0 +1,28 @@
+html { scroll-behavior:smooth; }
+a:focus-visible, [role="button"]:focus-visible, button:focus-visible { outline:2px solid #262626; outline-offset:5px; }
+/* Source styles define the layout; these additions restore browser interactions. */
+#projects { order:3!important; }
+#Process { order:4!important; }
+#Pricing { order:5!important; }
+#Testimonial { order:6!important; }
+#FAQ { order:7!important; }
+.framer-RRwlG[data-open="true"] { height:auto!important; }
+.framer-RRwlG .framer-1qwsnpy { opacity:1!important; }
+.framer-RRwlG:not([data-open="true"]) .framer-1qwsnpy { display:none!important; }
+.framer-RRwlG[data-open="true"] .framer-1qzsedw-container { transform:rotate(45deg); }
+[data-service-tab] { cursor:pointer; transition:background-color .2s,color .2s; }
+[data-service-tab] p { color:inherit!important; --framer-text-color:currentColor!important; }
+[data-service-tab][aria-selected="true"] { background:#262626!important; color:#fff!important; }
+[data-service-tab][aria-selected="false"] { background:transparent!important; color:#525252!important; }
+#Testimonial ul { transition:transform .45s ease; }
+#Testimonial button { pointer-events:auto!important; cursor:pointer!important; }
+#Testimonial button[aria-label="Previous"] { background:white!important; }
+#Testimonial button[aria-label="Next"] { background:#262626!important; }
+#Testimonial button:disabled { opacity:.35; cursor:default!important; }
+[data-project-preview] img, #Case\ study a img { transition:transform .45s ease; }
+[data-project-preview]:hover img, #Case\ study a:hover img { transform:scale(1.025); }
+[data-framer-appear-id] { animation:appear-in .65s ease both; }
+@keyframes appear-in { from { opacity:0;translate:0 18px; } to { opacity:1;translate:0 0; } }
+@keyframes logo-scroll { from{transform:translateX(0)} to{transform:translateX(calc(-50% - 8px))} }
+#Badge ul, [data-framer-name="Badge"] ul { animation:logo-scroll 28s linear infinite; }
+@media(prefers-reduced-motion:reduce) { html{scroll-behavior:auto} *,*::before,*::after{animation:none!important;transition:none!important} }
