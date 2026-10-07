@@ -92,3 +92,7 @@ if ('IntersectionObserver' in window) {
 document.querySelectorAll('a[href^="./case-study"],a[href="./contact"],a[href^="/case-study"],a[href="/contact"]').forEach(link => {
   link.href = new URL(link.getAttribute('href'), 'https://lumoss.framer.website/').href;
 });
+// Repeat the captured logo strip to keep the local ticker seamless.
+document.querySelectorAll('#Badge ul').forEach(list => {
+  Array.from(list.children).forEach(item => { const copy=item.cloneNode(true);copy.setAttribute('aria-hidden','true');list.append(copy); });
+});
