@@ -5,9 +5,10 @@ Static recreation of https://lumoss.framer.website/ for the first portfolio desi
 - Projects immediately after Case Studies.
 - Business Impact removed from the landing page.
 - Source fonts, imagery, responsive styles and SVG marks stored locally.
-- FAQ accordion, service tabs, carousel, process navigation, logo ticker and hover interactions.
+- About section replacing Core Services and Client Stories.
+- Smooth FAQ expansion in desktop and mobile layouts, viewport reveals, process navigation, logo ticker and hover interactions.
 
-Template names, sample work, pricing, testimonials, portrait and copy are intentionally retained until Banu supplies personal content. Case-study and contact links currently open the original template pages.
+Template names, sample work, portrait and remaining copy are intentionally retained until Banu supplies personal content. Case-study and contact links currently open the original template pages.
 
 ## Deploy from GitHub
 
