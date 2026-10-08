@@ -1,0 +1,70 @@
+/* Shared portfolio details. Case studies follow the reference's editorial column;
+   projects use a wider gallery and concise supporting notes. */
+.detail-page { background:#f7f7f7; color:#262626; margin:0; font-family:Switzer,Arial,sans-serif; }
+.detail-page * { box-sizing:border-box; }
+.detail-shell { width:100%; display:flex; flex-direction:column; align-items:center; }
+.detail-content { padding-top:132px; padding-bottom:80px; }
+.case-detail { width:min(520px,calc(100% - 40px)); }
+.project-detail { width:min(1080px,calc(100% - 80px)); }
+.detail-content h1,.detail-content h2 { font-family:Amarna,Arial,sans-serif; font-weight:400; color:#262626; margin:0; }
+.detail-content h1 { font-size:40px; line-height:1.2; }
+.detail-content h2 { font-size:22px; line-height:1.4; }
+.detail-content a { color:#525252; text-decoration:none; }
+.detail-content a:hover { color:#262626; }
+.back-link { display:inline-block; font-size:13px; line-height:20px; border-bottom:1px solid #d6d6d6; margin-bottom:32px; transition:border-color .2s ease; }
+.back-link:hover { border-color:#262626; }
+.detail-kind { color:#737373; font-size:12px; line-height:18px; margin:0 0 12px; }
+.detail-summary { color:#737373; font-size:16px; line-height:24px; margin:20px 0 0; max-width:520px; }
+.detail-meta { display:flex; flex-wrap:wrap; gap:32px 40px; margin:32px 0 0; }
+.detail-meta div { min-width:82px; }
+.detail-meta dt { color:#737373; font-size:14px; line-height:20px; margin-bottom:10px; }
+.detail-meta dd { margin:0; font-size:16px; line-height:24px; color:#737373; }
+.image-slot { margin:0; background:#e9e9e9; border:1px solid #e3e3e3; border-radius:24px; display:flex; justify-content:center; align-items:center; overflow:hidden; }
+.image-slot > div { text-align:center; display:flex; flex-direction:column; gap:8px; padding:24px; }
+.slot-label { color:#737373; font-size:14px; line-height:20px; }
+.slot-note { color:#858585; font-size:12px; line-height:18px; }
+.cover-slot { aspect-ratio:4/3; margin-top:40px; }
+.story-body { display:flex; flex-direction:column; gap:40px; padding-top:40px; }
+.story-section { scroll-margin-top:20px; }
+.content-note { font-size:16px; line-height:24px; color:#737373; margin:12px 0 0; }
+.process-slot { aspect-ratio:4/3; }
+.solution-slot { aspect-ratio:4/3; }
+.detail-end { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-top:64px; padding-top:28px; border-top:1px solid #dedede; font-size:14px; }
+.next-work { display:flex; flex-direction:column; gap:8px; text-align:right; }
+.next-work span { font-size:12px; color:#737373; }
+.next-work strong { font-family:Amarna,Arial,sans-serif; font-weight:400; font-size:24px; line-height:1.25; color:#262626; }
+.project-intro { display:grid; grid-template-columns:1.3fr 1fr; align-items:end; gap:64px; }
+.project-intro .detail-meta { margin:0; justify-content:flex-end; gap:24px 32px; }
+.project-detail h1 { font-size:56px; }
+.project-cover { aspect-ratio:16/9; margin-top:48px; }
+.project-overview { display:grid; grid-template-columns:1fr 2fr; gap:64px; margin:56px 0; }
+.project-overview p { margin:0; max-width:520px; }
+.project-gallery { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.gallery-slot { aspect-ratio:4/5; }
+.project-notes { display:grid; grid-template-columns:1fr 1fr; gap:64px; margin-top:48px; }
+.skip-link { position:fixed; top:12px; left:12px; z-index:1000; padding:12px 20px; background:#262626; color:#fff; transform:translateY(-150%); }
+.skip-link:focus { transform:none; }
+.detail-page .framer-z4x886 { order:unset!important; }
+.detail-content a:focus-visible { outline:2px solid #262626; outline-offset:5px; }
+@media(max-width:809.98px) {
+ .detail-content { padding-top:116px; padding-bottom:48px; }
+ .project-detail { width:calc(100% - 40px); }
+ .back-link { margin-bottom:24px; }
+ .detail-content h1,.project-detail h1 { font-size:36px; }
+ .detail-meta { gap:24px; }
+ .detail-meta div { min-width:72px; }
+ .detail-meta dd { font-size:14px; }
+ .cover-slot { margin-top:32px; }
+ .image-slot { border-radius:20px; }
+ .story-body { gap:32px; padding-top:32px; }
+ .project-intro { grid-template-columns:1fr; gap:28px; }
+ .project-intro .detail-meta { justify-content:flex-start; }
+ .project-cover { margin-top:32px; aspect-ratio:4/3; }
+ .project-overview { grid-template-columns:1fr; gap:12px; margin:32px 0; }
+ .project-gallery { grid-template-columns:1fr; gap:20px; }
+ .gallery-slot { aspect-ratio:4/3; }
+ .project-notes { grid-template-columns:1fr; gap:32px; margin-top:32px; }
+ .detail-end { margin-top:48px; }
+ .next-work strong { font-size:22px; }
+}
+@media(prefers-reduced-motion:reduce) { .detail-page { scroll-behavior:auto; } }

@@ -55,11 +55,6 @@ function updateProcess(){
 window.addEventListener('scroll',()=>{if(!processFrame)processFrame=requestAnimationFrame(updateProcess);},{passive:true});
 window.addEventListener('resize',()=>{if(!processFrame)processFrame=requestAnimationFrame(updateProcess);});
 updateProcess();
-// The reference's case-study/contact links open the original template pages for now.
-// Personal portfolio pages and real project data will replace them in the content pass.
-document.querySelectorAll('a[href^="./case-study"],a[href="./contact"],a[href^="/case-study"],a[href="/contact"]').forEach(link => {
-  link.href = new URL(link.getAttribute('href'), 'https://lumoss.framer.website/').href;
-});
 // Repeat the captured logo strip to keep the local ticker seamless.
 document.querySelectorAll('#Badge ul').forEach(list => {
   Array.from(list.children).forEach(item => { const copy=item.cloneNode(true);copy.setAttribute('aria-hidden','true');list.append(copy); });
