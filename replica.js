@@ -55,17 +55,6 @@ function updateProcess(){
 window.addEventListener('scroll',()=>{if(!processFrame)processFrame=requestAnimationFrame(updateProcess);},{passive:true});
 window.addEventListener('resize',()=>{if(!processFrame)processFrame=requestAnimationFrame(updateProcess);});
 updateProcess();
-// Reveal content as it enters the viewport instead of animating the whole page on load.
-const reducedMotion=matchMedia('(prefers-reduced-motion:reduce)');
-if('IntersectionObserver' in window && !reducedMotion.matches){
-  const reveals=new IntersectionObserver(entries=>entries.forEach(entry=>{
-    if(entry.isIntersecting){entry.target.classList.add('is-visible');reveals.unobserve(entry.target);}
-  }),{threshold:.08,rootMargin:'0px 0px -24px 0px'});
-  document.querySelectorAll('#home [data-framer-appear-id],#Badge,#Case\\ study > div:first-child,#projects > div:first-child,#Case\\ study a,#projects a,.about-heading,.about-content,#FAQ > div:first-child').forEach(element=>{
-    element.classList.add('motion-reveal');reveals.observe(element);
-  });
-  reducedMotion.addEventListener('change',event=>{if(event.matches){reveals.disconnect();document.querySelectorAll('.motion-reveal').forEach(e=>e.classList.add('is-visible'));}});
-}
 // The reference's case-study/contact links open the original template pages for now.
 // Personal portfolio pages and real project data will replace them in the content pass.
 document.querySelectorAll('a[href^="./case-study"],a[href="./contact"],a[href^="/case-study"],a[href="/contact"]').forEach(link => {
