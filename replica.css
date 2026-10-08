@@ -52,3 +52,8 @@ a[aria-disabled="true"] { cursor:default; }
 #contact .footer-social-logo { width:18px; height:18px; display:block; color:#262626; }
 #contact .footer-social:hover { background-color:#f7f7f7!important; }
 #contact .framer-e29axx img { object-fit:contain!important; }
+
+/* Keep the footer name together instead of wrapping inside the template's fixed width. */
+#contact .framer-1sd2aty { width:max-content!important; max-width:100%; }
+#contact .framer-vahffk h1 { white-space:nowrap; }
+@media(max-width:809px) { #contact .framer-vahffk h1 { font-size:clamp(18px,5vw,26px)!important; } }
