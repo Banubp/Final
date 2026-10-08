@@ -89,6 +89,7 @@ a[aria-disabled="true"] { cursor:default; }
 /* Organisations worked with: source-style monochrome logos and name fallbacks. */
 #Badge { min-height:82px; }
 .work-strip-label { flex:0 0 160px; }
+.work-strip-label h2 { font-family:Switzer,Arial,sans-serif; font-size:28px; font-weight:500; line-height:32px; color:#262626; margin:0 0 4px; }
 .work-strip-label p { font-family:Switzer,Arial,sans-serif; font-size:14px; line-height:20px; color:#525252; margin:0; }
 .work-strip-window { flex:1; min-width:0; overflow:hidden; mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent); }
 #Badge .work-strip-track { display:flex; align-items:center; gap:48px; margin:0; padding:0; list-style:none; max-height:none; animation:work-strip-scroll 48s linear infinite; }
