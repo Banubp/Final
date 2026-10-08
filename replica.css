@@ -77,3 +77,8 @@ a[aria-disabled="true"] { cursor:default; }
  .portfolio-about { max-width:430px; padding:40px 20px; gap:40px; }
  .framer-RRwlG.framer-ktcq39 { min-height:62px; }
 }
+
+/* Keep the fixed navigation readable as sections pass beneath its soft edge. */
+.framer-wuCg8 .framer-y1vjpo-container {
+ background:linear-gradient(to bottom,#f7f7f7 0%,rgba(247,247,247,.98) 78%,rgba(247,247,247,0) 100%);
+}
