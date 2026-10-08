@@ -82,3 +82,6 @@ a[aria-disabled="true"] { cursor:default; }
 .framer-wuCg8 .framer-y1vjpo-container {
  background:linear-gradient(to bottom,#f7f7f7 0%,rgba(247,247,247,.98) 78%,rgba(247,247,247,0) 100%);
 }
+
+/* The page scroll padding already clears the fixed header; avoid doubling it. */
+.portfolio-about,#contact { scroll-margin-top:0; }
