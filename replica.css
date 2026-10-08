@@ -46,3 +46,9 @@ html { scroll-padding-top:100px; }
 
 #contact { scroll-margin-top:100px; }
 a[aria-disabled="true"] { cursor:default; }
+
+/* Footer social marks are static until personal contact links are supplied. */
+#contact .footer-social { display:flex; align-items:center; justify-content:center; cursor:default; }
+#contact .footer-social-logo { width:18px; height:18px; display:block; color:#262626; }
+#contact .footer-social:hover { background-color:#f7f7f7!important; }
+#contact .framer-e29axx img { object-fit:contain!important; }
