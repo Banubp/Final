@@ -8,7 +8,7 @@ Static recreation of https://lumoss.framer.website/ for the first portfolio desi
 - About section replacing Core Services and Client Stories.
 - Smooth FAQ expansion in desktop and mobile layouts, viewport reveals, process navigation, logo ticker and hover interactions.
 
-Template names, sample work, portrait and remaining copy are intentionally retained until Banu supplies personal content. Case-study and contact links currently open the original template pages.
+Header uses Banu and Get in touch, linked to the footer. Case Studies: Spillmate, Active Luton, Booking.com, Nexa. Projects: Hobbyghar, Virtika, Nippun, Molly.co, PM dashboard, Woody. Detail links show Coming soon until real pages are supplied. Reference imagery and remaining sample copy are still retained for design review.
 
 ## Deploy from GitHub
 

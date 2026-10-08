@@ -43,3 +43,6 @@ a:focus-visible, [role="button"]:focus-visible, button:focus-visible { outline:2
 html { scroll-padding-top:100px; }
 @media(max-width:809px) { .portfolio-about { gap:32px; } .about-content { grid-template-columns:1fr; gap:28px; padding:28px 24px; border-radius:20px; } .about-intro h2 { font-size:28px; } .about-details { grid-template-columns:1fr; gap:16px; } }
 @media(prefers-reduced-motion:reduce) { .motion-reveal { opacity:1; translate:none; } }
+
+#contact { scroll-margin-top:100px; }
+a[aria-disabled="true"] { cursor:default; }
