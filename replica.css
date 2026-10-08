@@ -85,3 +85,26 @@ a[aria-disabled="true"] { cursor:default; }
 
 /* The page scroll padding already clears the fixed header; avoid doubling it. */
 .portfolio-about,#contact { scroll-margin-top:0; }
+
+/* Organisations worked with: source-style monochrome logos and name fallbacks. */
+#Badge { min-height:82px; }
+.work-strip-label { flex:0 0 160px; }
+.work-strip-label p { font-family:Switzer,Arial,sans-serif; font-size:14px; line-height:20px; color:#525252; margin:0; }
+.work-strip-window { flex:1; min-width:0; overflow:hidden; mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent); }
+#Badge .work-strip-track { display:flex; align-items:center; gap:48px; margin:0; padding:0; list-style:none; max-height:none; animation:work-strip-scroll 48s linear infinite; }
+.work-strip-track li { flex:0 0 auto; display:flex; align-items:center; justify-content:center; height:42px; }
+.work-logo { object-fit:contain; display:block; filter:grayscale(1); opacity:.72; }
+.work-wordmark { font-family:Switzer,Arial,sans-serif; font-size:22px; font-weight:500; line-height:1.2; color:#626262; white-space:nowrap; }
+.work-wordmark-long { font-size:18px; }
+@keyframes work-strip-scroll { from { transform:translateX(0); } to { transform:translateX(calc(-50% - 24px)); } }
+.work-strip-window:hover .work-strip-track { animation-play-state:paused!important; }
+@media(max-width:809.98px) {
+ #Badge .work-strip-label { flex:auto; width:100%; text-align:center; }
+ .work-strip-window { flex:auto; width:100%; }
+ #Badge .work-strip-track { gap:48px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .work-strip-window { mask-image:none; }
+ #Badge .work-strip-track { animation:none; flex-wrap:wrap; justify-content:center; gap:24px 32px; width:100%!important; }
+ .work-strip-track [aria-hidden="true"] { display:none; }
+}
