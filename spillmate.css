@@ -1,7 +1,7 @@
 /* Spillmate case study: existing portfolio typography, original product artwork. */
 .spillmate-detail{--spillmate-lime:#b8ef32;--spillmate-ink:#0b0b0b;--spillmate-paper:#fff}
 .spillmate-cover{margin:40px 0 0;background:#e0e0e0;border-radius:24px;overflow:hidden;aspect-ratio:4/3;display:flex;align-items:center}
-.spillmate-cover img{width:100%;height:100%;object-fit:contain;display:block}
+.spillmate-cover img{width:100%;height:100%;object-fit:cover;display:block}
 .spillmate-screens{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .spillmate-screens figure,.spillmate-single{margin:0;min-width:0}
 .spillmate-screens img,.spillmate-single img{width:100%;height:auto;display:block;border-radius:20px;border:1px solid #e5e5e5}
