@@ -1,0 +1,31 @@
+/* Active Luton: portfolio editorial shell, original blue product identity. */
+.luton-detail{--luton-navy:#061f46;--luton-blue:#0075dc;--luton-sky:#e9f3fa}
+.luton-cover{margin:40px 0 0;aspect-ratio:4/3;border-radius:24px;overflow:hidden;background:var(--luton-sky)}
+.luton-cover img{width:100%;height:100%;display:block;object-fit:cover}
+.luton-screens{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.luton-screens figure{margin:0;min-width:0}
+.luton-screens img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid #e2e5e9}
+.luton-detail figcaption{font-family:Switzer,Arial,sans-serif;font-size:12px;line-height:18px;color:#737373;margin-top:12px}
+.luton-single{width:calc(50% - 12px);align-self:center;grid-template-columns:1fr}
+.luton-feedback{margin-top:24px;display:grid;gap:16px}
+.luton-feedback article{padding:24px;background:white;border:1px solid #dce4ee;border-radius:20px;border-left:3px solid var(--luton-blue)}
+.luton-feedback h3,.luton-decisions h3,.luton-flow h3{font-family:Switzer,Arial,sans-serif;font-size:16px;line-height:24px;font-weight:500;margin:0;color:var(--luton-navy)}
+.luton-feedback h3 span{display:block;color:#737373;font-size:12px;line-height:18px;font-weight:400;margin-top:4px}
+.luton-feedback p,.luton-decisions p{font-size:14px;line-height:21px;color:#737373;margin:12px 0}
+.luton-feedback small{font-size:12px;line-height:18px;color:#525252;display:block}
+.luton-process{padding:0;margin:24px 0 0;list-style:none;counter-reset:process}
+.luton-process li{padding:20px 0 20px 44px;border-bottom:1px solid #dedede;position:relative;counter-increment:process}
+.luton-process li:before{content:counter(process,decimal-leading-zero);position:absolute;left:0;top:20px;color:var(--luton-blue);font-size:12px;line-height:24px}
+.luton-process strong{display:block;font-size:16px;line-height:24px;font-weight:500}
+.luton-process span{display:block;color:#737373;font-size:14px;line-height:21px;margin-top:8px}
+.luton-decisions{margin-top:24px;border-top:1px solid #dedede}
+.luton-decisions article{padding:20px 0;border-bottom:1px solid #dedede}
+.luton-decisions p{margin-bottom:0}
+.luton-flow{margin:24px 0 0;padding:24px;border-radius:24px;background:var(--luton-sky)}
+.luton-flow>div+div{margin-top:28px;padding-top:24px;border-top:1px solid #ccdbea}
+.luton-flow ol{list-style:none;padding:0;margin:16px 0 0;counter-reset:step;display:grid;gap:8px}
+.luton-flow li{counter-increment:step;background:white;border:1px solid #dce4ee;border-radius:12px;padding:12px 16px;color:var(--luton-navy);font-size:14px;line-height:20px}
+.luton-flow li:before{content:counter(step) ' · ';color:var(--luton-blue)}
+@media(max-width:479px){.luton-cover{margin-top:32px;border-radius:20px}.luton-screens{gap:12px}.luton-screens img{border-radius:10px}.luton-single{width:calc(50% - 6px)}.luton-feedback article,.luton-flow{padding:20px}.luton-process strong{font-size:14px}}
+
+.luton-screens a{display:block;cursor:zoom-in;border-radius:16px}.luton-screens a:focus-visible{outline:2px solid var(--luton-blue);outline-offset:4px}
