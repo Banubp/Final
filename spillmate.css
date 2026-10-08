@@ -1,0 +1,24 @@
+/* Spillmate case study: existing portfolio typography, original product artwork. */
+.spillmate-detail{--spillmate-lime:#b8ef32;--spillmate-ink:#0b0b0b;--spillmate-paper:#fff}
+.spillmate-cover{margin:40px 0 0;background:#e0e0e0;border-radius:24px;overflow:hidden;aspect-ratio:4/3;display:flex;align-items:center}
+.spillmate-cover img{width:100%;height:100%;object-fit:contain;display:block}
+.spillmate-screens{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.spillmate-screens figure,.spillmate-single{margin:0;min-width:0}
+.spillmate-screens img,.spillmate-single img{width:100%;height:auto;display:block;border-radius:20px;border:1px solid #e5e5e5}
+.spillmate-detail figcaption{font-family:Switzer,Arial,sans-serif;font-size:12px;line-height:18px;color:#737373;margin-top:12px}
+.spillmate-single{width:calc(50% - 12px);align-self:center}
+.spillmate-research{margin-top:24px;border-top:1px solid #dedede}
+.spillmate-research article{padding:20px 0;border-bottom:1px solid #dedede}
+.spillmate-research h3{font-family:Switzer,Arial,sans-serif;font-size:16px;line-height:24px;font-weight:500;margin:0}
+.spillmate-research p{font-size:14px;line-height:21px;color:#737373;margin:8px 0 12px}
+.spillmate-research span{font-size:12px;line-height:18px;color:#525252}
+.spillmate-flow{margin:24px 0 0;padding:24px;border-radius:24px;background:var(--spillmate-paper);border:1px solid #dedede}
+.spillmate-flow ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.spillmate-flow li{border:1px solid #d6d6d6;border-radius:20px;padding:20px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.spillmate-flow li:first-child{background:var(--spillmate-lime);border-color:var(--spillmate-lime)}
+.spillmate-flow li:last-child{background:var(--spillmate-ink);color:white;border-color:var(--spillmate-ink)}
+.spillmate-flow small{font-size:11px;line-height:16px;letter-spacing:.03em}
+.spillmate-flow strong{font-size:16px;line-height:22px;font-weight:600}
+.spillmate-flow span{font-size:12px;line-height:18px}
+.spillmate-flow figcaption{padding-top:8px}
+@media(max-width:479px){.spillmate-cover{margin-top:32px;border-radius:20px}.spillmate-screens{gap:12px}.spillmate-screens img,.spillmate-single img{border-radius:14px}.spillmate-single{width:calc(50% - 6px)}.spillmate-flow{padding:16px}.spillmate-flow ol{grid-template-columns:1fr}.spillmate-flow li{padding:16px}}
