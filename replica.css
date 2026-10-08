@@ -79,7 +79,7 @@ a[aria-disabled="true"] { cursor:default; }
 }
 
 /* Keep the fixed navigation readable as sections pass beneath its soft edge. */
-.framer-wuCg8 .framer-y1vjpo-container {
+.framer-y1vjpo-container {
  background:linear-gradient(to bottom,#f7f7f7 0%,rgba(247,247,247,.98) 78%,rgba(247,247,247,0) 100%);
 }
 
