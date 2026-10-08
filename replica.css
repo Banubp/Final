@@ -109,3 +109,9 @@ a[aria-disabled="true"] { cursor:default; }
  #Badge .work-strip-track { animation:none; flex-wrap:wrap; justify-content:center; gap:24px 32px; width:100%!important; }
  .work-strip-track [aria-hidden="true"] { display:none; }
 }
+
+/* Restore the reference client badge beside the organisation ticker. */
+#Badge .framer-1vjetmj { flex:0 0 auto; }
+#Badge .framer-uwwe7r { width:max-content; }
+#Badge .framer-uwwe7r p { white-space:nowrap; }
+@media(max-width:809.98px) { #Badge .framer-1vjetmj { flex:0 0 auto; } }
