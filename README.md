@@ -21,3 +21,7 @@ Vercel or Netlify: import this repository as a static / Other project. No build 
 `index.html` contains the captured layout and source styles. `replica.css` and `replica.js` contain interaction additions. Assets are in `assets/`.
 
 Desktop browser checks and production build checks passed for the source implementation. Mobile pixel parity and exact animation timing remain unverified. The source advertises a free Framer remix; comply with the template and asset terms before public use.
+
+## Footer
+
+Banu Prakash name, Phone / LinkedIn / Gmail logos, and Banuprakash handwritten signature. Social icons currently have no links, as requested. Template email and external contact links are removed.
