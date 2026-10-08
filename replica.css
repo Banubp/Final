@@ -115,3 +115,5 @@ a[aria-disabled="true"] { cursor:default; }
 #Badge .framer-uwwe7r { width:max-content; }
 #Badge .framer-uwwe7r p { white-space:nowrap; }
 @media(max-width:809.98px) { #Badge .framer-1vjetmj { flex:0 0 auto; } }
+
+.banu-header-logo { display:block; width:42px; height:40px; object-fit:contain; flex:0 0 auto; }
