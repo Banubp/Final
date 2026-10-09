@@ -58,3 +58,10 @@
 #contact .framer-1gljszf{height:auto!important;min-height:120px;align-items:center!important}
 #contact .framer-15frgvs{gap:0!important}
 @media(max-width:809.98px){#contact .framer-1gljszf{min-height:0;gap:32px!important}#contact .framer-15frgvs{align-items:center!important}}
+
+/* Footer contact stack: shared center line, equal icons and a full-width action. */
+#contact .framer-1dwqu18{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:20px!important;width:220px!important;max-width:100%;flex-shrink:0}
+#contact .framer-i57oxn{display:flex!important;align-items:center!important;justify-content:center!important;gap:16px!important;width:100%!important}
+#contact :is(.framer-1cqcp7h-container,.framer-cjrptw-container,.framer-1nbpns-container){width:40px!important;height:40px!important;flex:0 0 40px!important}
+#contact .framer-1ha0nek-container{width:100%!important;height:48px!important}
+#contact .framer-1ha0nek-container>a{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-height:48px;box-sizing:border-box}
