@@ -1,0 +1,52 @@
+{
+  "description": "Reconstructed from supplied Molly.CO screenshots. Values are implementation estimates, not recovered original Figma tokens.",
+  "colors": {
+    "ink": "#000000",
+    "canvas": "#ffffff",
+    "surface": "#f0f0f0",
+    "muted": "#666666",
+    "border": "#e5e5e5",
+    "rating": "#ffc633",
+    "discount": "#ff3333",
+    "discountSurface": "#fff0f0"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": {
+    "card": 20,
+    "panel": 32,
+    "pill": 999
+  },
+  "type": {
+    "display": {
+      "family": "Arial, sans-serif",
+      "weight": 900,
+      "size": 48,
+      "lineHeight": 1.05
+    },
+    "section": {
+      "weight": 900,
+      "size": 32
+    },
+    "body": {
+      "family": "Switzer, Arial, sans-serif",
+      "size": 16,
+      "lineHeight": 1.5
+    },
+    "label": {
+      "size": 14
+    }
+  },
+  "control": {
+    "minHeight": 44,
+    "focusRing": "2px solid #000000"
+  }
+}
