@@ -1,0 +1,35 @@
+/* Shared polish, retaining the portfolio's original layout and typography. */
+:root{--portfolio-muted:#626262;--portfolio-caption:#686868}
+.detail-content .detail-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:24px;margin-top:32px}
+.detail-content .detail-meta>div{min-width:0}
+.detail-content .detail-meta dd{overflow-wrap:break-word}
+.detail-content :is(.detail-kind,.detail-summary,.content-note,.detail-meta dt,.detail-meta dd){color:var(--portfolio-muted)}
+.detail-content .story-body p{color:var(--portfolio-muted)}
+.detail-content :is(figcaption,.booking-scope,.booking-attribution,.nexa-small,.luton-feedback h3 span,.luton-process span){color:var(--portfolio-caption);font-size:13px;line-height:20px}
+.detail-content .story-body figure{min-width:0}
+.detail-content .story-body img{max-width:100%}
+.detail-content .story-body figure>a{display:block;cursor:zoom-in;border-radius:16px}
+.detail-content .nexa-screen{margin-left:auto;margin-right:auto}
+.detail-content .nexa-gallery .nexa-screen{margin-left:0;margin-right:0}
+.detail-content .detail-end{align-items:flex-start}
+.detail-content .back-link,.detail-content .detail-end>a{min-height:28px;padding-bottom:4px}
+#contact .framer-vahffk h2{white-space:nowrap;font-family:Amarna,Arial,sans-serif;font-weight:400}
+#Process [aria-current="step"]{opacity:1!important}
+#Process [role="button"]:not([aria-current="step"]){opacity:.6!important}
+#Badge .work-strip-window:focus-within .work-strip-track{animation-play-state:paused!important}
+#Badge .work-logo{opacity:.9}
+#about .about-details span{color:var(--portfolio-caption)}
+@media(max-width:479px){
+ .detail-content .detail-meta{gap:20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .detail-content .detail-meta dd{font-size:14px;line-height:22px}
+ .detail-content :is(.spillmate-screens,.luton-screens,.nexa-gallery){grid-template-columns:1fr;gap:28px;width:min(320px,100%);margin-left:auto;margin-right:auto}
+ .detail-content :is(.spillmate-single,.luton-single,.nexa-screen){width:min(320px,100%);max-width:100%;margin-left:auto;margin-right:auto}
+ .detail-content .nexa-gallery .nexa-screen{margin:0}
+ .detail-content .case-detail-pair{grid-template-columns:1fr;gap:20px}
+ .detail-content .detail-end{gap:16px;font-size:13px}
+ .detail-content .next-work{max-width:55%}
+ .detail-content .next-work strong{font-size:22px}
+ #contact .framer-vahffk h2{font-size:clamp(18px,5vw,26px)!important}
+ .banu-header-logo{width:34px;height:34px}
+}
+@media(prefers-reduced-motion:reduce){#Badge .work-strip-track{animation:none!important}}

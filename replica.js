@@ -33,7 +33,7 @@ document.querySelectorAll('.framer-RRwlG').forEach((card, index) => {
   });
 });
 // Process labels move to the corresponding card, preserving the scroll-based flow.
-const headings = document.querySelectorAll('#Process .framer-82jxbt h2');
+const headings = document.querySelectorAll('#Process .framer-82jxbt :is(h2,h3)');
 headings.forEach((heading,index) => {
   const label = heading.parentElement.parentElement;
   label.setAttribute('role','button'); label.tabIndex=0;
