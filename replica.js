@@ -37,24 +37,8 @@ const headings = document.querySelectorAll('#Process .framer-82jxbt :is(h2,h3)')
 headings.forEach((heading,index) => {
   const label = heading.parentElement.parentElement;
   label.setAttribute('role','button'); label.tabIndex=0;
-  activation(label, () => document.getElementById(`card-${index+1}`)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'center'}));
+  activation(label, () => document.getElementById(`card-${index+1}`)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'}));
 });
-const cards = document.querySelectorAll('#Process [id^="card-"]');
-let processFrame=0;
-function updateProcess(){
-  processFrame=0;
-  const activationLine=window.innerHeight*.45;
-  let active=0;
-  cards.forEach((card,index)=>{ if(card.getBoundingClientRect().top<=activationLine)active=index; });
-  headings.forEach((heading,index)=>{
-    const label=heading.parentElement.parentElement;
-    label.style.opacity=index===active?'1':'.3';
-    if(index===active)label.setAttribute('aria-current','step');else label.removeAttribute('aria-current');
-  });
-}
-window.addEventListener('scroll',()=>{if(!processFrame)processFrame=requestAnimationFrame(updateProcess);},{passive:true});
-window.addEventListener('resize',()=>{if(!processFrame)processFrame=requestAnimationFrame(updateProcess);});
-updateProcess();
 // Repeat the captured logo strip to keep the local ticker seamless.
 document.querySelectorAll('#Badge ul').forEach(list => {
   Array.from(list.children).forEach(item => { const copy=item.cloneNode(true);copy.setAttribute('aria-hidden','true');list.append(copy); });

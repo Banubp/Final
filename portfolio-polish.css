@@ -65,3 +65,17 @@
 #contact :is(.framer-1cqcp7h-container,.framer-cjrptw-container,.framer-1nbpns-container){width:40px!important;height:40px!important;flex:0 0 40px!important}
 #contact .framer-1ha0nek-container{width:100%!important;height:48px!important}
 #contact .framer-1ha0nek-container>a{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-height:48px;box-sizing:border-box}
+
+/* Professional portfolio audit: contrast, focus, targets and controllable motion. */
+#card-4 .flow-eyebrow{color:#80572c!important}
+.booking-process li>span{color:#626262}
+.nexa-process li>span{color:#70449f}
+a:focus-visible,button:focus-visible,[role="button"]:focus-visible,input:focus-visible{outline:2px solid #626a42!important;outline-offset:5px!important}
+#contact .footer-social{cursor:pointer;transition:background-color .25s ease,transform .25s ease}
+#contact .footer-social:hover{background-color:#eeeee9!important;transform:translateY(-2px)}
+#contact :is(.framer-1cqcp7h-container,.framer-cjrptw-container,.framer-1nbpns-container){width:44px!important;height:44px!important;flex-basis:44px!important}
+.clients-pause{display:flex;align-items:center;justify-content:flex-end;gap:8px;width:100%;max-width:1080px;margin:0 auto 12px;font:12px/20px Switzer,sans-serif;color:#626262;cursor:pointer;min-height:32px}
+.clients-pause input{accent-color:#626a42;width:14px;height:14px}
+#Badge:has(.clients-pause input:checked) .work-strip-track{animation-play-state:paused!important}
+@media(max-width:809.98px){.clients-pause{padding:0 20px;box-sizing:border-box}}
+@media(prefers-reduced-motion:reduce){.clients-pause{display:none}#contact .footer-social{transition:none!important}#contact .footer-social:hover{transform:none}}
