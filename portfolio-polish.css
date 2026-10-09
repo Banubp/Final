@@ -55,6 +55,6 @@
 }
 
 /* Compact footer after removing the biography, preserving the identity row. */
-#contact .framer-1gljszf{height:auto!important;min-height:120px;align-items:center!important;width:100%!important}
+#contact .framer-1gljszf{height:auto!important;min-height:120px;align-items:center!important}
 #contact .framer-15frgvs{gap:0!important}
 @media(max-width:809.98px){#contact .framer-1gljszf{min-height:0;gap:32px!important}#contact .framer-15frgvs{align-items:center!important}}
