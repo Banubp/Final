@@ -46,3 +46,10 @@
  #contact .framer-1sd2aty{flex:1 1 0!important;min-width:0;width:auto!important}
  #contact :is(.framer-vahffk,.framer-10fudo0){width:100%!important;max-width:100%}
 }
+
+@media(max-width:809.98px){
+ .framer-wuCg8 #home .framer-1srp9sm{width:calc(100vw - 40px)!important;left:calc((100% - 100vw)/2 + 20px)!important}
+ #Process :is(.framer-2j28rp,.framer-y9lxt),#FAQ :is(.framer-8xk89l,.framer-1qdihww){width:100%!important;max-width:100%}
+ #Badge .framer-uwwe7r{width:100%!important}
+ #Badge .framer-uwwe7r p{white-space:normal!important;font-size:12px!important}
+}
