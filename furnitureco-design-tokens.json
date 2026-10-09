@@ -1,0 +1,32 @@
+{
+  "description": "Proposed FurnitureCo system reconstructed from supplied screens; values are estimates.",
+  "colors": {
+    "teal": "#061e20",
+    "olive": "#566340",
+    "lime": "#a6ed00",
+    "surface": "#f5f5f3",
+    "ink": "#242424"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48
+  ],
+  "typography": {
+    "heading": "Georgia, serif",
+    "body": "Switzer, Arial, sans-serif",
+    "scale": [
+      40,
+      28,
+      20,
+      16,
+      14
+    ]
+  },
+  "minimumControlHeight": 44,
+  "radius": 12
+}
