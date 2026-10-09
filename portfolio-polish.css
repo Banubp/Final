@@ -79,3 +79,7 @@ a:focus-visible,button:focus-visible,[role="button"]:focus-visible,input:focus-v
 #Badge:has(.clients-pause input:checked) .work-strip-track{animation-play-state:paused!important}
 @media(max-width:809.98px){.clients-pause{padding:0 20px;box-sizing:border-box}}
 @media(prefers-reduced-motion:reduce){.clients-pause{display:none}#contact .footer-social{transition:none!important}#contact .footer-social:hover{transform:none}}
+
+#Badge{position:relative!important}
+#Badge .clients-pause{position:absolute;right:0;bottom:-20px;width:auto;max-width:none;margin:0;z-index:1}
+@media(max-width:809.98px){#Badge .clients-pause{right:20px;padding:0}}
