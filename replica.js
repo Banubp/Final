@@ -37,7 +37,14 @@ const headings = document.querySelectorAll('#Process .framer-82jxbt :is(h2,h3)')
 headings.forEach((heading,index) => {
   const label = heading.parentElement.parentElement;
   label.setAttribute('role','button'); label.tabIndex=0;
-  activation(label, () => document.getElementById(`card-${index+1}`)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'}));
+  activation(label, () => {
+    const target=document.getElementById(`card-${index+1}`); if(!target)return;
+    const parent=target.parentElement, siblings=[...parent.children];
+    const gap=parseFloat(getComputedStyle(parent).rowGap)||0;
+    const preceding=siblings.slice(0,siblings.indexOf(target)).reduce((sum,card)=>sum+card.offsetHeight+gap,0);
+    const stickyTop=parseFloat(getComputedStyle(target).top)||120;
+    window.scrollTo({top:window.scrollY+parent.getBoundingClientRect().top+preceding-stickyTop,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+  });
 });
 // Repeat the captured logo strip to keep the local ticker seamless.
 document.querySelectorAll('#Badge ul').forEach(list => {
