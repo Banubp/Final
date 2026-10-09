@@ -1,0 +1,21 @@
+/* Hobby Ghar keeps the portfolio typography; its artwork carries the brand colour. */
+.hobbyghar-detail .project-intro .detail-meta{grid-template-columns:1fr 1fr;gap:24px}
+.hobbyghar-detail .detail-meta>div:last-child{grid-column:1/-1}
+.hobbyghar-detail .project-intro .content-note{max-width:520px}
+.hobbyghar-detail figure{margin:0;min-width:0}
+.hobbyghar-detail img{display:block;max-width:100%;height:auto;width:100%}
+.hobby-cover{margin-top:48px!important}
+.hobby-cover>img{aspect-ratio:4/3;object-fit:cover;border-radius:24px}
+.hobbyghar-detail figcaption{font-size:13px;line-height:20px;color:#686868;margin-top:12px}
+.hobby-section{margin-top:56px}
+.hobby-section-heading{max-width:620px;margin-bottom:28px}
+.hobby-scope{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;padding:28px 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.hobby-scope h3{font-size:15px;font-weight:500;line-height:22px;margin:0 0 10px}
+.hobby-scope p{font-size:15px;line-height:23px;color:#626262;margin:0}
+.hobby-app-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,320px));justify-content:center;gap:48px;padding:40px;background:#edf2e9;border-radius:24px}
+.hobby-screen-window{display:block;aspect-ratio:375/812;overflow:hidden;border-radius:20px;background:#fff;box-shadow:0 12px 32px #163b2214}
+.hobbyghar-detail .hobby-screen-window img{height:100%;object-fit:cover;object-position:top}
+.hobby-wide a{display:block;background:#fff;border-radius:20px;overflow:hidden;border:1px solid #e4e4e4}
+.hobbyghar-detail a:focus-visible{outline:2px solid #2f813d;outline-offset:5px}
+@media(max-width:809.98px){.hobby-cover{margin-top:32px!important}.hobby-section{margin-top:36px}.hobby-scope{grid-template-columns:1fr;gap:24px}.hobby-app-gallery{gap:24px;padding:24px}}
+@media(max-width:479px){.hobby-app-gallery{grid-template-columns:minmax(0,320px);padding:20px}.hobbyghar-detail .detail-meta{grid-template-columns:1fr 1fr}}
