@@ -1,0 +1,15 @@
+/* Only the new notice is styled; the existing portfolio stays untouched. */
+.motion-note{display:none}
+@media(max-width:809px){
+  .motion-note{display:block;position:fixed;z-index:10000;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:380px;max-height:calc(100dvh - 140px);overflow:auto;box-sizing:border-box;margin:0 auto;padding:20px;background:#fbfcf8;color:#262626;border:1px solid #dfe4d7;border-radius:20px;box-shadow:0 12px 40px #26262626;font-family:Switzer,Arial,sans-serif;text-align:left}
+  .motion-note-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .motion-note-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#e8efdf;color:#566848}
+  .motion-note-icon svg{width:22px;height:22px}
+  .motion-note-close{display:grid;place-items:center;width:44px;height:44px;margin:-8px -8px -8px 0;padding:0;border:0;border-radius:10px;background:transparent;color:#626262;cursor:pointer}
+  .motion-note-close svg{width:20px;height:20px}
+  .motion-note h2{font:400 25px/1.2 Amarna,Arial,sans-serif;letter-spacing:-.4px;margin:0 0 12px;color:#262626}
+  .motion-note p{font-size:14px;line-height:21px;margin:0 0 10px;color:#525252}
+  .motion-note strong{font-weight:500;color:#3e4e33}
+  .motion-note-done{display:block;width:100%;min-height:44px;margin-top:16px;border:1px solid #d1d9c6;border-radius:10px;background:#e8efdf;color:#394b2e;font:500 14px/20px Switzer,Arial,sans-serif;cursor:pointer}
+  .motion-note button:focus-visible{outline:2px solid #566848;outline-offset:3px}
+}
